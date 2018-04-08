@@ -32,6 +32,7 @@ URI     : https://colorlib.com
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- Main css -->
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="30">
@@ -112,6 +113,45 @@ URI     : https://colorlib.com
             <img src="images/client-logos.png" alt="client logos" class="img-fluid">
         </div>
     </div> -->
+
+    <!-- Music -->
+    <script src="music_player/skPlayer-3.0/dist/skPlayer.min.js">
+    </script>
+
+    <div id="skPlayer"></div>
+    <script>
+    var player = new skPlayer({
+     autoplay: true,
+    //可选项,自动播放,默认为false,true/false
+    listshow: false,
+    //可选项,列表显示,默认为true,true/false
+    mode: 'singleloop',
+    //可选项,循环模式,默认为'listloop'
+    //'listloop',列表循环
+    //'singleloop',单曲循环
+    //可选项配置同上
+    music: {
+    //必需项,音乐配置
+        type: 'file',
+        //必需项,自配置文件方式指定填'file'
+        source: [
+        //必需项,音乐文件数组
+            {
+                name: '',
+                //必需项,歌名
+                author: '',
+                //必需项,歌手
+                src: 'music_player/instrumental_music_for_inspirational_wedding_videos_royalty_free_background_music.mp3',
+                //必需项,音乐文件
+                cover: 'music_player/cover.jpg'
+                //必需项,封面图片
+            }
+        ]
+    }
+});
+</script>
+
+
 
     <div class="section light-bg" id="features">
 
@@ -464,12 +504,15 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/ball.js"></script>
     <script src="js/countdown.js"></script>
+
     <script src="js/fluid-background.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Plugins JS -->
     <script src="js/owl.carousel.min.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+
+    
 
 </body>
 

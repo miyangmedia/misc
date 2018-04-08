@@ -36,6 +36,10 @@ body {
     position: relative;
 }
 
+html, body {
+  overflow-x:hidden 
+} 
+
 a {
     color: #e38cb7;
 }

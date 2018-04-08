@@ -16,7 +16,8 @@ for (let i = 0; i < numBalls; i++) {
   ball.style.height = ball.style.width;
   
   balls.push(ball);
-  document.body.append(ball);
+  let theDiv = document.getElementById("ball-area");
+  theDiv.append(ball);
 }
 
 // Keyframes

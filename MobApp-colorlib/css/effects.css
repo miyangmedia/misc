@@ -173,7 +173,7 @@ svg {
 
 
 /* =================== Countdown ====================*/
-#clockdiv{
+#clockdiv,#clockdiv1{
     margin-top: 5px;
     color: #fff;
     display: inline-block;
@@ -183,14 +183,14 @@ svg {
     /*float: left;*/
 }
 
-#clockdiv > div{
+#clockdiv > div, #clockdiv1 > div{
     padding: 5px;
     border-radius: 5px;
     background: #ff006a;
     display: inline-block;
 }
 
-#clockdiv div > span{
+#clockdiv div > span, #clockdiv1 div > span{
     width:30px;
     padding: 5px;
     border-radius: 5px;

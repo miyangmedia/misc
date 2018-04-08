@@ -1,16 +1,26 @@
 // Some random colors
 const colors = ["#ff006a","#ff7900","#ffc901","#EEEEEE", "#FCBC0F", "#F85F36"];//"#1B1B1B", 
 
-const numBalls = 50;
+const numBalls = 200;
 const balls = [];
 const size = 0.7;
+
+var body = document.body,
+    html = document.documentElement;
+
+var doc_height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+var doc_width = body.scrollWidth
 
 for (let i = 0; i < numBalls; i++) {
   let ball = document.createElement("div");
   ball.classList.add("ball");
   ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-  ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
-  ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+  // ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+  // ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+  ball.style.left = `${Math.floor(Math.random() * doc_width)}px`;
+  ball.style.top = `${Math.floor(Math.random() * 4500)}px`;
   ball.style.transform = `scale(${Math.random()})`;
   ball.style.width = `${Math.random()*size}em`;
   ball.style.height = ball.style.width;

@@ -112,6 +112,20 @@ URI     : https://colorlib.com
         <!-- Music -->
         <div id="skPlayer" style="float: right;top:-55px;right:5px;"></div>
 
+        <script type="text/javascript">
+            // Wechat music auto play
+                function autoPlayAudio2() {
+        window.onload = function() {
+            // alert(typeof WeixinJSBridge);
+            WeixinJSBridge.invoke('getNetworkType', {}, function(e) {
+                // 在这里拿到 e.err_msg, 这里面就包含了所有的网络类型
+                // alert(e.err_msg);
+                document.getElementById('skPlayer').play();
+            });
+        };
+    }
+        </script>
+
         <!-- Balls  -->
         
         <div id="ball-area" style="">

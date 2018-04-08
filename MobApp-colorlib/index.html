@@ -33,6 +33,8 @@ URI     : https://colorlib.com
     <!-- Main css -->
     <link href="css/style.css" rel="stylesheet">
 
+    <script src="music_player/skPlayer-3.0/dist/skPlayer.min.js">
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="30">
@@ -105,7 +107,13 @@ URI     : https://colorlib.com
               </div>
             </div>
         </div>
-        <div class="img-holder mt-3"><img src="images/lantern-kiss-cover.png" alt="main image" class="img-fluid"></div>
+        <div class="img-holder mt-3"><img src="images/lantern-kiss-cover.png" alt="main image" class="img-fluid">
+
+        <!-- Music -->
+        <div id="skPlayer" style="float: right;top:-55px;right:5px;"></div>
+        </div>
+
+        
     </header>
 
 <!--     <div class="client-logos my-5">
@@ -114,11 +122,9 @@ URI     : https://colorlib.com
         </div>
     </div> -->
 
-    <!-- Music -->
-    <script src="music_player/skPlayer-3.0/dist/skPlayer.min.js">
-    </script>
+    
 
-    <div id="skPlayer"></div>
+
     <script>
     var player = new skPlayer({
      autoplay: true,

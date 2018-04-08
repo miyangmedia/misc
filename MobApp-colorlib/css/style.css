@@ -245,6 +245,7 @@ header {
 }
 
 .bg-gradient {
+    height: 100vh;
     /*background-image: linear-gradient(to left, #7b00e0, #ff006a);*/
     background-image: -moz-linear-gradient( -99deg, #7b00e0 0%, #ff006a 100%);
     background-image: -webkit-linear-gradient( -99deg, #7b00e0 0%, #ff006a 100%);
@@ -264,6 +265,14 @@ header {
     /*height: 0;*/
     padding-bottom: 0;
     /*overflow: hidden;*/
+}
+.bg-gradient{
+    position: relative;
+}
+
+.bg-gradient .cover-image{
+    position: absolute;
+    bottom: -50px;
 }
 
 @media (max-width:1200px) {

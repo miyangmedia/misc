@@ -272,7 +272,7 @@ header {
 
 .bg-gradient .cover-image{
     position: absolute;
-    bottom: -50px;
+    bottom: 0px;
 }
 
 @media (max-width:1200px) {

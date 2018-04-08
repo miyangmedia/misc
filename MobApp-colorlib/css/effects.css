@@ -171,3 +171,34 @@ svg {
   
 }
 
+
+/* =================== Countdown ====================*/
+#clockdiv{
+    margin-top: 5px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 17px;
+    /*float: left;*/
+}
+
+#clockdiv > div{
+    padding: 5px;
+    border-radius: 5px;
+    background: #ff006a;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    width:30px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #cc0255;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 2px;
+    font-size: 12px;
+}

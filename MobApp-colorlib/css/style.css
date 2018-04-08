@@ -253,7 +253,7 @@ header {
     font-weight: 300;
     color: #ffb8f6;
     max-width: 800px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 
 .img-holder {
@@ -279,6 +279,7 @@ header {
 
 .main-title{
     width:275px;
+    margin-bottom: -15px;
 }
 
 /* Photo */

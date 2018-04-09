@@ -295,6 +295,14 @@ header {
     margin-bottom: -25px;
 }
 
+#kiss-image{
+    height: 270px; 
+    width: 400px;
+    background: url(https://miyangmedia.github.io/misc/MobApp-colorlib/images/lantern-kiss-cover.png) center center no-repeat;
+    background-size: 100% 100%;
+    
+}
+
 /* Photo */
 .photo-icon{
     height:45px;

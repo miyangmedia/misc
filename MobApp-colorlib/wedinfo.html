@@ -517,15 +517,23 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
     <!-- Custom JS -->
     <script src="js/script.js"></script>
 
+    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/qzact/common/share/share.js"></script>
+
     <script type="text/javascript">
-        require(['http://qzonestyle.gtimg.cn/qzone/qzact/common/share/share.js'], function(setShareInfo) {
-    setShareInfo({
-        title:          '米阳·婚礼-真诚邀请您参加',
+        setShareInfo({
+         title:          '米阳·婚礼-真诚邀请您参加',
         summary:        '2018年5月1日·中午12:00 | 四川·成都·青白江·湖景壹号樱花厅',
         pic:            'https://miyangmedia.github.io/misc/MobApp-colorlib/music_player/cover.jpg',
         url:            'https://miyangmedia.github.io/misc/MobApp-colorlib/wedinfo.html'
-    });
-})
+        // ,
+         // WXconfig:       {
+         //     swapTitleInWX: true,
+         //     appId: '',
+         //     timestamp: '',
+         //     nonceStr: '',
+         //     signature: ''
+         // }
+     });
 
     </script>
 

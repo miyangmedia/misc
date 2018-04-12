@@ -10,7 +10,7 @@ URI     : https://colorlib.com
  -->
 
 <head>
-    <title>米阳·婚礼-真诚邀请您参加</title>
+    <title>米阳·婚礼-敬邀您参加</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0;user-scalable=no"> -->
@@ -140,7 +140,16 @@ var parsed_qs = gup('to', url)
 parsed_qs = decodeURIComponent(parsed_qs);
 
 if (parsed_qs.length>0){
-document.getElementById("invitees").textContent='：'+parsed_qs+' '};
+document.getElementById("invitees").textContent='：'+parsed_qs+' ';
+
+newTitle = "米阳婚礼：：敬邀"+parsed_qs+"参加";
+
+if (document.title != newTitle) {
+    document.title = newTitle;
+}
+$('meta[name="description"]').attr("content", newDescription);
+
+};
 </script>
 
 
